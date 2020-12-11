@@ -1,0 +1,632 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="te" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ఎంపికలు మరియు ఫ్లాగ్స్ &mdash; OpenDroneMap 2.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="OpenDroneMap అవుట్‌పుట్‌లు" href="outputs.html" />
+    <link rel="prev" title="Tutorials" href="tutorials.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> OpenDroneMap
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#hardware-recommendations">Hardware Recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#windows">Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-1-check-virtualization-support">Step 1. Check Virtualization Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-2-install-requirements">Step 2. Install Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-3-check-memory-and-cpu-allocation">Step 3. Check Memory and CPU Allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-download-webodm">Step 4. Download WebODM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-launch-webodm">Step 4. Launch WebODM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#macos">macOS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id1">Step 1. Check Virtualization Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id2">Step 2. Install Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id3">Step 3. Check Memory and CPU Allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-download-and-launch-webodm">Step 4. Download and Launch WebODM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#linux">Linux</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-1-install-requirements">Step 1. Install Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-2-check-additional-requirements">Step 2. Check Additional Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-3-download-and-launch-webodm">Step 3. Download and Launch WebODM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#basic-commands-and-troubleshooting">Basic Commands and Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#hello-webodm">Hello, WebODM!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#running-on-more-than-one-machine">Running on more than one machine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#creating-high-quality-orthophotos">Creating High Quality Orthophotos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#calibrating-the-camera">Calibrating the Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#creating-digital-elevation-models">Creating Digital Elevation Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#using-docker">Using Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#listing-docker-machines">Listing Docker Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#accessing-logs-on-the-instance">Accessing logs on the instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#command-line-access-to-instances">Command line access to instances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#cleaning-up-after-docker">Cleaning up after Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#using-odm-from-low-bandwidth-location">Using ODM from low-bandwidth location</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#what-is-this-and-who-is-it-for">What is this and who is it for?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#steps">Steps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#install">Install</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#prep-data-and-project">Prep data and project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#resize-droplet-pull-pin-run-away">Resize droplet, pull pin, run away</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#after-it-finishes-assuming-you-survive-that-long">After it finishes (assuming you survive that long)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ఎంపికలు మరియు ఫ్లాగ్స్</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">ఆర్గుమెంట్స్</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">OpenDroneMap అవుట్‌పుట్‌లు</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#point-cloud">పాయింట్ క్లౌడ్</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#d-textured-model">3D ఆకృతి మోడల్</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#orthophoto">ఆర్థోఫోటో</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#dtm-dsm">DTM / DSM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#list-of-all-outputs">అన్ని ఉత్పాదనల జాబితా</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcp.html">గ్రౌండ్ కంట్రోల్ పాయింట్లు</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#recommended-practices-for-gcp-setting">జిసిపి సెట్టింగ్ కోసం సిఫార్సు చేసిన పద్ధతులు</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#gcp-file-format">GCP ఫైల్ ఫార్మాట్</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#user-interfaces">వినియోగదారు ఇంటర్‌ఫేస్‌లు</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gcp.html#id1">POSM GCPi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gcp.html#id2">జిసిపి ఎడిటర్ ప్రో</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#references">ప్రస్తావనలు</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="map-accuracy.html">మ్యాప్ ఖచ్చితత్వం</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="map-accuracy.html#what-to-expect">ఏమి ఆశించను</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="map-accuracy.html#aspects-impacting-map-accuracy">మ్యాప్ ఖచ్చితత్వాన్ని ప్రభావితం చేసే అంశాలు</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="map-accuracy.html#references">ప్రస్తావనలు</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geo.html">చిత్రం జియోలొకేషన్ ఫైల్స్</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masks.html">ఇమేజ్ మాస్క్‌లను ఉపయోగించడం</a></li>
+<li class="toctree-l1"><a class="reference internal" href="large.html">పెద్ద డేటాసెట్లను విభజించడం</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="large.html#calibrate-images">Calibrate images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#local-split-merge">Local Split-Merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#distributed-split-merge">Distributed Split-Merge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="large.html#getting-started-with-distributed-split-merge">Getting Started with Distributed Split-Merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#understanding-the-cluster">Understanding the Cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#accessing-the-logs">Accessing the Logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#autoscaling-clusterodm">Autoscaling ClusterODM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">అదనపు సూచనలు</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#for-users">వినియోగదారుల కోసం</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#for-developers">డెవలపర్ల కోసం</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flying.html">ఎగిరే చిట్కాలు</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multispectral.html">మల్టీస్పెక్ట్రల్ సపోర్ట్</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multispectral.html#hardware">హార్డ్వేర్</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multispectral.html#usage">వాడుక</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requesting-features.html">ఫీచర్లను ఎలా అభ్యర్థించాలి</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">ఎలా సహకరించాలి</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#community-forum">కమ్యూనిటీ ఫోరం</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#reporting-bugs">దోషాలు నివేదించడం</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#template-for-submitting-bug-reports">బగ్ నివేదికలను సమర్పించడానికి మూస</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#pull-requests">అభ్యర్థనలను లాగండి</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenDroneMap</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>ఎంపికలు మరియు ఫ్లాగ్స్</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/arguments.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="options-and-flags">
+<span id="arguments"></span><h1>ఎంపికలు మరియు ఫ్లాగ్స్<a class="headerlink" href="#options-and-flags" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>ఆర్గుమెంట్స్<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>సహాయ సందేశాన్ని చూపించి నిష్క్రమించండి.</p>
+</dd>
+<dt><kbd><span class="option">--images <var>&lt;path&gt;</var></span>, <span class="option">-i <var>&lt;path&gt;</var></span></kbd></dt>
+<dd><p>చిత్రాలను ఇన్పుట్ చేయడానికి మార్గం.</p>
+</dd>
+<dt><kbd><span class="option">--project-path <var>&lt;path&gt;</var></span></kbd></dt>
+<dd><p>ప్రాజెక్ట్ ఫోల్డర్‌కు మార్గం.</p>
+</dd>
+<dt><kbd><span class="option">--resize-to <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>Openfm కోసం అతిపెద్ద వైపు చిత్రాలను పున izes పరిమాణం చేస్తుంది. నిలిపివేయడానికి `` -1`` కు సెట్ చేయండి.</p>
+<p>డిఫాల్ట్: <code class="docutils literal notranslate"><span class="pre">2048</span></code></p>
+</dd>
+<dt><kbd><span class="option">--end-with <var>&lt;string&gt;</var></span>, <span class="option">-e <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ఎంపికలు: `` డేటాసెట్`` | `` స్ప్లిట్`` | `` విలీనం`` | `` ఓపెన్‌ఎఫ్‌ఎమ్`` | `` mve`` | `` odm_filterpoints`` | `` odm_meshing`` | `` mvs_texturing`` | `` odm_georeferencing`` | `` odm_dem`` | `` odm_orthophoto``</p>
+</dd>
+<dt><kbd><span class="option">--pc-ept</span></kbd></dt>
+<dd><p>ఎంట్వైన్ పాయింట్ క్లౌడ్‌ను ఉత్పత్తి చేస్తుంది. వెబ్‌ఓడిఎమ్‌లో నడుస్తున్నప్పుడు ఈ జెండా స్వయంచాలకంగా జతచేయబడుతుంది మరియు వెబ్‌ఓడిఎమ్‌లోకి దిగుమతి కోసం నోడ్ఓడిఎమ్ లేదా కమాండ్ లైన్‌లో నడుస్తున్నప్పుడు సరైన డైరెక్టరీ నిర్మాణాన్ని సృష్టించడానికి ఉపయోగపడుతుంది.</p>
+</dd>
+<dt><kbd><span class="option">--rerun <var>&lt;string&gt;</var></span>, <span class="option">-r <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ఎంపికలు: `` డేటాసెట్`` | `` స్ప్లిట్`` | `` విలీనం`` | `` ఓపెన్‌ఎఫ్‌ఎమ్`` | `` mve`` | `` odm_filterpoints`` | `` odm_meshing`` | `` mvs_texturing`` | `` odm_georeferencing`` | `` odm_dem`` | `` odm_orthophoto``</p>
+</dd>
+<dt><kbd><span class="option">--rerun-all</span></kbd></dt>
+<dd><p>అన్ని పనులను తిరిగి ప్రారంభించండి.</p>
+</dd>
+<dt><kbd><span class="option">--rerun-from <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ఎంపికలు: `` డేటాసెట్`` | `` స్ప్లిట్`` | `` విలీనం`` | `` ఓపెన్‌ఎఫ్‌ఎమ్`` | `` mve`` | `` odm_filterpoints`` | `` odm_meshing`` | `` mvs_texturing`` | `` odm_georeferencing`` | `` odm_dem`` | `` odm_orthophoto``</p>
+</dd>
+<dt><kbd><span class="option">--proj <var>&lt;PROJ4 string&gt;</var></span></kbd></dt>
+<dd><p>మోడల్‌ను భౌగోళిక కోఆర్డినేట్‌లుగా మార్చడానికి ఉపయోగించే ప్రొజెక్షన్.</p>
+</dd>
+<dt><kbd><span class="option">--min-num-features <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>ప్రతి చిత్రానికి సంగ్రహించడానికి కనీస సంఖ్య లక్షణాలు. మరిన్ని లక్షణాలు మంచి ఫలితాలకు దారితీస్తాయి కాని నెమ్మదిగా అమలు చేస్తాయి.</p>
+<p>డిఫాల్ట్: <code class="docutils literal notranslate"><span class="pre">8000</span></code></p>
+</dd>
+<dt><kbd><span class="option">--feature-quality</span></kbd></dt>
+<dd><p>ఫీచర్ వెలికితీత నాణ్యతను సెట్ చేయండి. అధిక నాణ్యత మంచి లక్షణాలను ఉత్పత్తి చేస్తుంది, కానీ ఎక్కువ మెమరీ అవసరం మరియు ఎక్కువ సమయం పడుతుంది.</p>
+<p>ఎంపికలు: `` అల్ట్రా`` | `` అధిక`` | `` మీడియం`` | `` తక్కువ`` | `` అత్యల్ప``</p>
+<p>డిఫాల్ట్: `` అధిక``</p>
+</dd>
+<dt><kbd><span class="option">--matcher-neighbors <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>GPS ఎగ్జిఫ్ డేటా ఆధారంగా ప్రీ-మ్యాచ్ చేయడానికి సమీప చిత్రాల సంఖ్య. ముందస్తు సరిపోలికను దాటవేయడానికి `` 0`` కు సెట్ చేయండి. పొరుగువారు దూర పరామితితో కలిసి పనిచేస్తారు, ముందస్తు సరిపోలికను ఉపయోగించకుండా రెండింటినీ 0 గా సెట్ చేయండి. OpenSFM రెండు పారామితులను ఒకేసారి ఉపయోగిస్తుంది, బండ్లర్ విలువను కలిగి ఉన్న ఒకదాన్ని మాత్రమే ఉపయోగిస్తుంది, నైబర్స్ పరామితికి ప్రాధాన్యత ఇస్తుంది.</p>
+<p>డిఫాల్ట్: `` 8``</p>
+</dd>
+<dt><kbd><span class="option">--matcher-distance <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>GPS ఎగ్జిఫ్ డేటా ఆధారంగా ప్రీ-మ్యాచింగ్ చిత్రాలను కనుగొనడానికి మీటర్లలో దూర ప్రవేశం. ముందస్తు సరిపోలికను దాటవేయడానికి `` సరిపోలిక-పొరుగువారి`` మరియు ఇది `` 0`` కు సెట్ చేయండి.</p>
+<p>డిఫాల్ట్: `` 0``</p>
+</dd>
+<dt><kbd><span class="option">--use-fixed-camera-params</span></kbd></dt>
+<dd><p>బండ్లర్ సమయంలో కెమెరా పారామితి ఆప్టిమైజేషన్‌ను ఆపివేయండి. `` - కెమెరా`` పరామితి ఉపయోగించకపోతే డిఫాల్ట్‌గా ఆఫ్.</p>
+</dd>
+<dt><kbd><span class="option">--camera-lens <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>కెమెరా ప్రొజెక్షన్ రకాన్ని సెట్ చేయండి. విలువను మాన్యువల్‌గా సెట్ చేయడం రేఖాగణిత తొలగింపును మెరుగుపరచడంలో సహాయపడుతుంది. డిఫాల్ట్‌గా అనువర్తనం చిత్రాల మెటాడేటా నుండి లెన్స్ రకాన్ని నిర్ణయించడానికి ప్రయత్నిస్తుంది.</p>
+<p>ఎంపికలు: `` ఆటో`` | `` దృక్పథం`` | `` బ్రౌన్`` | `` ఫిషీ`` | `` గోళాకార``</p>
+<p>డిఫాల్ట్: `` ఆటో``</p>
+</dd>
+<dt><kbd><span class="option">--radiometric-calibration <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>చిత్రాలపై ప్రదర్శించడానికి రేడియోమెట్రిక్ క్రమాంకనాన్ని సెట్ చేయండి. మల్టీస్పెక్ట్రల్ చిత్రాలను ప్రాసెస్ చేస్తున్నప్పుడు మీరు ప్రతిబింబ విలువలను పొందటానికి ఈ ఎంపికను సెట్ చేయాలి (లేకపోతే మీరు డిజిటల్ సంఖ్య (DN) విలువలను పొందుతారు).</p>
+<p>[`` కెమెరా``] బ్లాక్ లెవల్, విగ్నేటింగ్, రో గ్రేడియంట్ లాభం / ఎక్స్‌పోజర్ పరిహారం (తగిన ఎక్సిఫ్ ట్యాగ్‌లు కనుగొనబడితే) వర్తిస్తుంది.</p>
+<p>[<code class="docutils literal notranslate"><span class="pre">`కెమెరా</span> <span class="pre">+</span> <span class="pre">సూర్యుడు</span></code>] ప్రయోగాత్మకమైనది, [<code class="docutils literal notranslate"><span class="pre">`కెమెరా</span></code>] యొక్క అన్ని దిద్దుబాట్లను వర్తిస్తుంది మరియు అదనంగా సూర్యుని కోణాన్ని పరిగణనలోకి తీసుకొని డౌన్‌వెల్లింగ్ లైట్ సెన్సార్ (DLS) ద్వారా నమోదు చేయబడిన స్పెక్ట్రల్ రేడియన్స్‌కు పరిహారం ఇస్తుంది.</p>
+<p>ఎంపికలు: `` ఏదీ`` | `` కెమెరా`` | `` కెమెరా + సూర్యుడు``</p>
+<p>డిఫాల్ట్: `` ఏదీ``</p>
+</dd>
+<dt><kbd><span class="option">--max-concurrency <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>వివిధ ప్రక్రియలలో ఉపయోగించాల్సిన గరిష్ట సంఖ్యల ప్రక్రియలు. పీక్ మెమరీ అవసరం థ్రెడ్‌కు GB 1GB మరియు 2 మెగాపిక్సెల్ ఇమేజ్ రిజల్యూషన్.</p>
+<p>డిఫాల్ట్: * కోర్ల సంఖ్య *</p>
+</dd>
+<dt><kbd><span class="option">--depthmap-resolution <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>లోతు మ్యాప్ చిత్రాల రిజల్యూషన్‌ను సెట్ చేయడం ద్వారా పాయింట్ క్లౌడ్ యొక్క సాంద్రతను నియంత్రిస్తుంది. అధిక విలువలు గణించడానికి ఎక్కువ సమయం పడుతుంది మరియు ఎక్కువ మెమరీ కానీ దట్టమైన పాయింట్ మేఘాలను ఉత్పత్తి చేస్తాయి.</p>
+<p>డిఫాల్ట్: `` 640``</p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-min-consistent-views <var>&lt;integer: 2 ≤ x ≤ 9&gt;</var></span></kbd></dt>
+<dd><p>ఒక పాయింట్ చెల్లుబాటు అయ్యేలా పునర్నిర్మించాల్సిన కనీస వీక్షణలు. మీ చిత్రాలు తక్కువ అతివ్యాప్తి కలిగి ఉంటే తక్కువ విలువలను ఉపయోగించండి. తక్కువ విలువలు దట్టమైన పాయింట్ మేఘాలకు కారణమవుతాయి కాని ఎక్కువ శబ్దంతో ఉంటాయి. దట్టమైన సరిపోలిక కోసం OpenSfM ఉపయోగిస్తే మాత్రమే వర్తిస్తుంది.</p>
+<p>డిఫాల్ట్: `` 3``</p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-method <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ముడి లోతు మ్యాప్ గణన అల్గోరిథం. `` PATCH_MATCH`` మరియు `` PATCH_MATCH_SAMPLE`` వేగంగా ఉంటాయి, కానీ కొన్ని చెల్లుబాటు అయ్యే పాయింట్లను కోల్పోవచ్చు. `` BRUTE_FORCE`` ఎక్కువ సమయం తీసుకుంటుంది కాని దట్టమైన పునర్నిర్మాణాలను ఉత్పత్తి చేస్తుంది.</p>
+<p>ఎంపికలు: `` PATCH_MATCH`` | `` PATCH_MATCH_SAMPLE`` | `` BRUTE_FORCE``</p>
+<p>డిఫాల్ట్: `` PATCH_MATCH```</p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-min-patch-sd <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>`` PATCH_MATCH`` లేదా `` PATCH_MATCH_SAMPLE`` ఉపయోగిస్తున్నప్పుడు, పాచెస్‌ను చేర్చడానికి ప్రామాణిక విచలనం ప్రవేశాన్ని నియంత్రిస్తుంది. తక్కువ ప్రామాణిక విచలనం కలిగిన పాచెస్ విస్మరించబడతాయి.</p>
+<p>డిఫాల్ట్: `` 1``</p>
+</dd>
+<dt><kbd><span class="option">--use-hybrid-bundle-adjustment</span></kbd></dt>
+<dd><p>పునర్నిర్మాణానికి జోడించిన ప్రతి చిత్రం కోసం స్థానిక బండిల్ సర్దుబాటు మరియు ప్రతి 100 చిత్రాలకు ప్రపంచ సర్దుబాటును అమలు చేయండి. చాలా పెద్ద డేటాసెట్ల కోసం పునర్నిర్మాణాన్ని వేగవంతం చేస్తుంది.</p>
+</dd>
+<dt><kbd><span class="option">--mve-confidence <var>&lt;float: 0 ≤ x ≤ 1&gt;</var></span></kbd></dt>
+<dd><p>నిర్దిష్ట విశ్వాస పరిమితి కంటే తక్కువ ఉన్న పాయింట్లను విస్మరించండి. ఇది MVE తో చేసిన దట్టమైన పునర్నిర్మాణాలను మాత్రమే ప్రభావితం చేస్తుంది. అధిక విలువలు ఎక్కువ పాయింట్లను విస్మరిస్తాయి.</p>
+<p>డిఫాల్ట్: `` 0.6``</p>
+</dd>
+<dt><kbd><span class="option">--use-3dmesh</span></kbd></dt>
+<dd><p>2.5 డి మెష్‌కు బదులుగా ఆర్థోఫోటోను లెక్కించడానికి పూర్తి 3D మెష్‌ను ఉపయోగించండి. ఈ ఐచ్చికము కొంచెం వేగంగా ఉంటుంది మరియు ప్లానార్ ప్రాంతాలలో ఇలాంటి ఫలితాలను అందిస్తుంది.</p>
+</dd>
+<dt><kbd><span class="option">--skip-3dmodel</span></kbd></dt>
+<dd><p>పూర్తి 3D మోడల్ యొక్క తరం దాటవేయి. మీకు ఆర్థోఫోటోస్ మరియు DEM లు వంటి 2D ఫలితాలు మాత్రమే అవసరమైతే ఇది సమయాన్ని ఆదా చేస్తుంది.</p>
+</dd>
+<dt><kbd><span class="option">--use-opensfm-dense</span></kbd></dt>
+<dd><p>ప్రత్యామ్నాయంగా దట్టమైన పాయింట్ క్లౌడ్‌ను లెక్కించడానికి opensfm ని ఉపయోగించండి.</p>
+</dd>
+<dt><kbd><span class="option">--ignore-gsd</span></kbd></dt>
+<dd><p>గ్రౌండ్ సాంప్లింగ్ దూరాన్ని (జిఎస్‌డి) విస్మరించండి. GSD ఇమేజ్ అవుట్‌పుట్‌ల యొక్క గరిష్ట రిజల్యూషన్‌ను క్యాప్ చేస్తుంది మరియు అవసరమైనప్పుడు చిత్రాల పరిమాణాన్ని మారుస్తుంది, దీని ఫలితంగా వేగంగా ప్రాసెసింగ్ మరియు తక్కువ మెమరీ వినియోగం జరుగుతుంది. GSD ఒక అంచనా కాబట్టి, కొన్నిసార్లు దీనిని విస్మరించడం వలన ఇమేజ్ అవుట్పుట్ నాణ్యత కొంచెం మెరుగ్గా ఉంటుంది.</p>
+</dd>
+<dt><kbd><span class="option">--mesh-size <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>అవుట్పుట్ మెష్ యొక్క గరిష్ట శీర్ష గణన.</p>
+<p>డిఫాల్ట్: <code class="docutils literal notranslate"><span class="pre">100000</span></code></p>
+</dd>
+<dt><kbd><span class="option">--mesh-octree-depth <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>మెష్ పునర్నిర్మాణంలో ఉపయోగించే అక్టోబర్-చెట్టు లోతు, ఎక్కువ శీర్షాలను పొందడానికి పెంచండి, సిఫార్సు చేసిన విలువలు 8-12.</p>
+<p>డిఫాల్ట్: `` 9``</p>
+</dd>
+<dt><kbd><span class="option">--mesh-samples <var>&lt;float ≥ 1.0&gt;</var></span></kbd></dt>
+<dd><p>Number of points per octree node. For relatively low noise, values in the range of [1-5] can be used. For noisier datasets, large values in the range of [15-20] may be employed.</p>
+<p>డిఫాల్ట్: `` 1.0``</p>
+</dd>
+<dt><kbd><span class="option">--mesh-point-weight <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>ఈ ఫ్లోటింగ్ పాయింట్ విలువ స్క్రీన్డ్ పాయిసన్ సమీకరణం యొక్క సూత్రీకరణలో పాయింట్ నమూనాల ఇంటర్‌పోలేషన్ ఇవ్వబడిన ప్రాముఖ్యతను తెలుపుతుంది. ఈ విలువను `` 0`` కు సెట్ చేయడం ద్వారా అసలు (స్క్రీన్‌ చేయని) పాయిజన్ పునర్నిర్మాణం యొక్క ఫలితాలను పొందవచ్చు.</p>
+<p>డిఫాల్ట్: `` 4``</p>
+</dd>
+<dt><kbd><span class="option">--fast-orthophoto</span></kbd></dt>
+<dd><p>** ప్రయోగాత్మక. ** దట్టమైన పునర్నిర్మాణం మరియు 3D మోడల్ ఉత్పత్తిని దాటవేస్తుంది. ఇది చిన్న పునర్నిర్మాణం నుండి నేరుగా ఆర్థోఫోటోను ఉత్పత్తి చేస్తుంది. మీకు ఆర్థోఫోటో అవసరమైతే మరియు పూర్తి 3D మోడల్ అవసరం లేకపోతే, ఈ ఎంపికను ప్రారంభించండి.</p>
+</dd>
+<dt><kbd><span class="option">--crop <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>డేటాసెట్ సరిహద్దుల చుట్టూ మృదువైన బఫర్‌ను సృష్టించడం ద్వారా ఇమేజ్ అవుట్‌పుట్‌లను స్వయంచాలకంగా కత్తిరించండి, ఇది N మీటర్లతో కుదించబడుతుంది. పంటను నిలిపివేయడానికి `` 0`` ఉపయోగించండి.</p>
+<p>డిఫాల్ట్: `` 3``</p>
+</dd>
+<dt><kbd><span class="option">--pc-classify</span></kbd></dt>
+<dd><p>సింపుల్ మోర్ఫోలాజికల్ ఫిల్టర్ ఉపయోగించి పాయింట్ క్లౌడ్ అవుట్‌పుట్‌లను వర్గీకరించండి. `` --Dem- * `` పారామితులను సర్దుబాటు చేయడం ద్వారా మీరు ఈ ఎంపిక యొక్క ప్రవర్తనను నియంత్రించవచ్చు.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--pc-csv</span></kbd></dt>
+<dd><p>CSV ఆకృతిలో జియోరెఫరెన్స్ పాయింట్ క్లౌడ్‌ను ఎగుమతి చేయండి.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--pc-las</span></kbd></dt>
+<dd><p>జియోరెఫరెన్స్ పాయింట్ క్లౌడ్‌ను లాస్ ఆకృతిలో ఎగుమతి చేయండి.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--pc-filter <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>స్థానిక సగటు నుండి N ప్రామాణిక విచలనాల కంటే ఎక్కువ వ్యత్యాసమయ్యే పాయింట్లను తొలగించడం ద్వారా పాయింట్ క్లౌడ్‌ను ఫిల్టర్ చేస్తుంది. వడపోతను నిలిపివేయడానికి `` 0`` కు సెట్ చేయండి.</p>
+<p>డిఫాల్ట్: `` 2.5``</p>
+</dd>
+<dt><kbd><span class="option">--smrf-scalar <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>సింపుల్ మోర్ఫోలాజికల్ ఫిల్టర్ ఎలివేషన్ స్కేలార్ పరామితి.</p>
+<p>డిఫాల్ట్: `` 1.25``</p>
+</dd>
+<dt><kbd><span class="option">--smrf-slope <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>సింపుల్ మోర్ఫోలాజికల్ ఫిల్టర్ వాలు పరామితి (రన్ ఓవర్ రైజ్).</p>
+<p>డిఫాల్ట్: `` 0.15``</p>
+</dd>
+<dt><kbd><span class="option">--smrf-threshold <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>సింపుల్ మోర్ఫోలాజికల్ ఫిల్టర్ ఎలివేషన్ థ్రెషోల్డ్ పరామితి (మీటర్లు).</p>
+<p>డిఫాల్ట్: `` 0.5``</p>
+</dd>
+<dt><kbd><span class="option">--smrf-window <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>సింపుల్ మోర్ఫోలాజికల్ ఫిల్టర్ విండో వ్యాసార్థ పరామితి (మీటర్లు).</p>
+<p>డిఫాల్ట్: `` 18.0``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-data-term <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ఎంపికలు: `` ప్రాంతం`` | `` జిమి``</p>
+<p>డిఫాల్ట్: `` gmi``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-nadir-weight <var>&lt;integer: 0 ≤ x ≤ 32&gt;</var></span></kbd></dt>
+<dd><p>ఆర్థోఫోటోస్‌ను మాత్రమే ప్రభావితం చేస్తుంది. అధిక విలువలు పదునైన మూలలకు కారణమవుతాయి, కానీ రంగు పంపిణీ మరియు అస్పష్టతను ప్రభావితం చేస్తాయి. ప్లానార్ ప్రాంతాలకు తక్కువ విలువలు మరియు పట్టణ ప్రాంతాలకు అధిక విలువలను ఉపయోగించండి. డిఫాల్ట్ విలువ చాలా సందర్భాలలో బాగా పనిచేస్తుంది.</p>
+<p>డిఫాల్ట్: `` 16``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-outlier-removal-type <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>ఫోటోమెట్రిక్ అవుట్‌లియర్ తొలగింపు పద్ధతి రకం.</p>
+<p>Options: <code class="docutils literal notranslate"><span class="pre">none</span></code> | <code class="docutils literal notranslate"><span class="pre">gauss_damping</span></code> | <code class="docutils literal notranslate"><span class="pre">gauss_clamping</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">gauss_clamping</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-visibility-test</span></kbd></dt>
+<dd><p>Skip geometric visibility test.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-global-seam-leveling</span></kbd></dt>
+<dd><p>Skip global seam leveling. Useful for IR data.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-local-seam-leveling</span></kbd></dt>
+<dd><p>Skip local seam blending.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-hole-filling</span></kbd></dt>
+<dd><p>Skip filling of holes in the mesh.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-keep-unseen-faces</span></kbd></dt>
+<dd><p>Keep faces in the mesh that are not seen in any camera.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--texturing-tone-mapping <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Turn on gamma tone mapping or none for no tone mapping.</p>
+<p>Options: <code class="docutils literal notranslate"><span class="pre">gamma</span></code> | <code class="docutils literal notranslate"><span class="pre">none</span></code></p>
+<p>డిఫాల్ట్: `` ఏదీ``</p>
+</dd>
+<dt><kbd><span class="option">--gcp <var>&lt;path string&gt;</var></span></kbd></dt>
+<dd><p>Path to the file containing the ground control points used for georeferencing. The file needs to have the following line format: <code class="docutils literal notranslate"><span class="pre">easting</span> <span class="pre">northing</span> <span class="pre">height</span> <span class="pre">pixelrow</span> <span class="pre">pixelcol</span> <span class="pre">imagename</span></code></p>
+<p>Default: None.</p>
+</dd>
+<dt><kbd><span class="option">--use-exif</span></kbd></dt>
+<dd><p>Use this tag if you have a gcp_list.txt but want to use the exif geotags instead.</p>
+</dd>
+<dt><kbd><span class="option">--dtm</span></kbd></dt>
+<dd><p>Use this tag to build a DTM (Digital Terrain Model, ground only) using a simple morphological filter. Check the <code class="docutils literal notranslate"><span class="pre">--dem*</span></code> and <code class="docutils literal notranslate"><span class="pre">--smrf*</span></code> parameters for finer tuning.</p>
+</dd>
+<dt><kbd><span class="option">--dsm</span></kbd></dt>
+<dd><p>Use this tag to build a DSM (Digital Surface Model, ground + objects) using a progressive morphological filter. Check the <code class="docutils literal notranslate"><span class="pre">--dem*</span></code> parameters for finer tuning.</p>
+</dd>
+<dt><kbd><span class="option">--dem-gapfill-steps <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Number of steps used to fill areas with gaps. Set to <code class="docutils literal notranslate"><span class="pre">0</span></code> to disable gap filling. Starting with a radius equal to the output resolution, N different DEMs are generated with progressively bigger radius using the inverse distance weighted (IDW) algorithm and merged together. Remaining gaps are then merged using nearest neighbor interpolation.</p>
+<p>డిఫాల్ట్: `` 3``</p>
+</dd>
+<dt><kbd><span class="option">--dem-resolution <var>&lt;float&gt;</var></span></kbd></dt>
+<dd><p>DSM/DTM resolution in cm / pixel.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--dem-decimation <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Decimate the points before generating the DEM. <code class="docutils literal notranslate"><span class="pre">1</span></code> is no decimation (full quality). <code class="docutils literal notranslate"><span class="pre">100</span></code> decimates ~99% of the points. Useful for speeding up generation.</p>
+<p>డిఫాల్ట్: `` 1``</p>
+</dd>
+<dt><kbd><span class="option">--dem-euclidean-map</span></kbd></dt>
+<dd><p>Computes an euclidean raster map for each DEM. The map reports the distance from each cell to the nearest NODATA value (before any hole filling takes place). This can be useful to isolate the areas that have been filled.</p>
+<blockquote>
+<div><p>డిఫాల్ట్: `` తప్పు``</p>
+</div></blockquote>
+</dd>
+<dt><kbd><span class="option">--orthophoto-resolution <var>&lt;float: x ﹥0.0&gt;</var></span></kbd></dt>
+<dd><p>Orthophoto resolution in cm / pixel.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-no-tiled</span></kbd></dt>
+<dd><p>Set this parameter if you want a stripped geoTIFF.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-compression <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Set the compression to use. Note that this could break gdal_translate if you don't know what you are doing.</p>
+<p>Options: <code class="docutils literal notranslate"><span class="pre">JPEG</span></code> | <code class="docutils literal notranslate"><span class="pre">LZW</span></code> | <code class="docutils literal notranslate"><span class="pre">PACKBITS</span></code> | <code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code> | <code class="docutils literal notranslate"><span class="pre">LZMA</span></code> | <code class="docutils literal notranslate"><span class="pre">NONE</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-bigtiff <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Control whether the created orthophoto is a BigTIFF or classic TIFF. BigTIFF is a variant for files larger than 4GiB of data. See GDAL specs: <a class="reference external" href="https://www.gdal.org/frmt_gtiff.html">https://www.gdal.org/frmt_gtiff.html</a> for more info.</p>
+<p>Options: <code class="docutils literal notranslate"><span class="pre">YES</span></code> | <code class="docutils literal notranslate"><span class="pre">NO</span></code> | <code class="docutils literal notranslate"><span class="pre">IF_NEEDED</span></code> | <code class="docutils literal notranslate"><span class="pre">IF_SAFER</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">IF_SAFER</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-cutline</span></kbd></dt>
+<dd><p>Generates a polygon around the cropping area that cuts the orthophoto around the edges of features. This polygon can be useful for stitching seamless mosaics with multiple overlapping orthophotos.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--build-overviews</span></kbd></dt>
+<dd><p>Build orthophoto overviews using gdaladdo.</p>
+</dd>
+<dt><kbd><span class="option">--verbose</span>, <span class="option">-v</span></kbd></dt>
+<dd><p>Print additional messages to the console.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--time</span></kbd></dt>
+<dd><p>Generates a benchmark file with runtime info.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>Displays software version number and exits.</p>
+</dd>
+<dt><kbd><span class="option">--split <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Average number of images per submodel. When splitting a large dataset into smaller submodels, images are grouped into clusters. This value regulates the number of images that each cluster should have on average.</p>
+</dd>
+<dt><kbd><span class="option">--split-overlap <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Radius of the overlap between submodels. After grouping images into clusters, images that are closer than this radius to a cluster are added to the cluster. This is done to ensure that neighboring submodels overlap.</p>
+</dd>
+<dt><kbd><span class="option">--optimize-disk-space</span></kbd></dt>
+<dd><p>Delete heavy intermediate files (such as original orthos, dtm, dsm) to optimize disk space usage, while keeping the compressed versions. This affects the ability to restart the pipeline from an intermediate stage, but allows datasets to be processed on machines that don't have sufficient disk space available. Also, in this mode, the &quot;reports&quot; does not get written under the output 'opensfm' folder.</p>
+<p>డిఫాల్ట్: `` తప్పు``</p>
+</dd>
+<dt><kbd><span class="option">--sm-cluster <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>URL to a ClusterODM instance for distributing a split-merge workflow on multiple nodes in parallel.</p>
+<p>Default: <em>None</em></p>
+</dd>
+<dt><kbd><span class="option">--merge <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Choose what to merge in the merge step in a split dataset. By default all available outputs are merged.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">all</span></code></p>
+</dd>
+</dl>
+<p><a class="reference external" href="https://github.com/opendronemap/docs#how-to-make-your-first-contribution">Learn to edit</a> and help improve <a class="reference external" href="https://github.com/OpenDroneMap/docs/blob/publish/source/arguments.rst">this page</a>!</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="outputs.html" class="btn btn-neutral float-right" title="OpenDroneMap అవుట్‌పుట్‌లు" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tutorials.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, OpenDroneMap
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

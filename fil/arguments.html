@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fil" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mga Opsyon at Tanda &mdash; OpenDroneMap 2.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="OpenDroneMap Outputs" href="outputs.html" />
+    <link rel="prev" title="Mga Tutoryal" href="tutorials.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> OpenDroneMap
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Instalasyon at Paano Simulan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#hardware-recommendations">Hardware Recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#windows">Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-1-check-virtualization-support">Step 1. I-check Virtualization Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-2-install-requirements">Step 2. Install Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-3-check-memory-and-cpu-allocation">Step 3. I-check ang Memory at CPU Allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-download-webodm">Step 4. Download WebODM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-launch-webodm">Step 4. Launch WebODM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#macos">macOS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id1">Step 1. I-check Virtualization Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id2">Step 2. Install Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#id3">Step 3. I-check ang Memory at CPU Allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-4-download-and-launch-webodm">Step 4. I-download at i-launch ang WebODM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#linux">Linux</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-1-install-requirements">Step 1. Mga kailangan bago maginstall.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-2-check-additional-requirements">Step 2. I-check ang mga karagdagan na requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#step-3-download-and-launch-webodm">Step 3. Download and Launch WebODM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#basic-commands-and-troubleshooting">Basic na mga cCommands at Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#hello-webodm">Hello, WebODM!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#running-on-more-than-one-machine">Pagpapatakbo sa dalawa o mas marami pang machine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Mga Tutoryal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#creating-high-quality-orthophotos">Paglikha ng Mataas na Kalidad ng Orthophotos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#calibrating-the-camera">Pag-kalibrate ng Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#creating-digital-elevation-models">Paglikha ng Digital Elevation Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#using-docker">Using Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#listing-docker-machines">Listing Docker Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#accessing-logs-on-the-instance">Accessing logs on the instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#command-line-access-to-instances">Command line access to instances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#cleaning-up-after-docker">Cleaning up after Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#using-odm-from-low-bandwidth-location">Paggamit ng ODM para sa low-bandwidth na lokasyon.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#what-is-this-and-who-is-it-for">Ano ito at para kanino ito?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorials.html#steps">Steps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#install">Install</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#prep-data-and-project">Prep data and project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#resize-droplet-pull-pin-run-away">I-resize ang droplet, hatakin ang pin at i-proseso ito.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorials.html#after-it-finishes-assuming-you-survive-that-long">Matapos ang lahat (assuming na ikaw ay nagsurvive ng ganoon katagal)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mga Opsyon at Tanda</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Mga Argumento</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">OpenDroneMap Outputs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#point-cloud">Point Cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#d-textured-model">3D Textured Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#orthophoto">Orthophoto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#dtm-dsm">DTM/DSM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#list-of-all-outputs">Listahan ng mga output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcp.html">Ground Control Points</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#recommended-practices-for-gcp-setting">Mga nirerekumendang gawi para sa paglagay ng GCP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#gcp-file-format">GCP file format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#user-interfaces">User Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gcp.html#id1">POSM GCPi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gcp.html#id2">GCP Editor Pro</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gcp.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="map-accuracy.html">Kawastuan ng Mapa</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="map-accuracy.html#what-to-expect">Mga Dapat I-expect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="map-accuracy.html#aspects-impacting-map-accuracy">Mga aspeto na may impact sa map accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="map-accuracy.html#references">Mga Sanggunian</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geo.html">Image Geolocation Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masks.html">Gamit ang Image Masks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="large.html">Splitting Large Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="large.html#calibrate-images">Calibrate images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#local-split-merge">Local Split-Merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#distributed-split-merge">Distributed Split-Merge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="large.html#getting-started-with-distributed-split-merge">Paano simulan ang Distributed Split-Merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#understanding-the-cluster">Pagkaunawa sa Cluster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#accessing-the-logs">Pag-access sa Logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="large.html#autoscaling-clusterodm">Autoscaling ClusterODM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#limitations">Mga limitasyon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="large.html#acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Karagdagang Sanggunian</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#for-users">Para sa gagamit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#for-developers">Para sa mga taga-buo.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flying.html">Mga Paalala sa Pagpapalipad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multispectral.html">Multispectral Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multispectral.html#hardware">Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multispectral.html#usage">Paggamit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requesting-features.html">Paano Magrequest ng Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Paano makadaragdag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#community-forum">Pagtitipon ng Komunidad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#reporting-bugs">Pagsumite ng mga Sira</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#template-for-submitting-bug-reports">Template para sa pagpapasa ng Bug Reports</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#pull-requests">Ipakita ang mga Request</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenDroneMap</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Mga Opsyon at Tanda</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/arguments.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="options-and-flags">
+<span id="arguments"></span><h1>Mga Opsyon at Tanda<a class="headerlink" href="#options-and-flags" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Mga Argumento<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>Ipakita ang help message at mag-exit.</p>
+</dd>
+<dt><kbd><span class="option">--images <var>&lt;path&gt;</var></span>, <span class="option">-i <var>&lt;path&gt;</var></span></kbd></dt>
+<dd><p>Kawing patungo sa mga imahe.</p>
+</dd>
+<dt><kbd><span class="option">--project-path <var>&lt;path&gt;</var></span></kbd></dt>
+<dd><p>Kawing patungo sa mga proyekto.</p>
+</dd>
+<dt><kbd><span class="option">--resize-to <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>Binabago ang laki ng imahe mula sa pinakamalaki na sukat para sa opensfm. I-set sa <code class="docutils literal notranslate"><span class="pre">-1</span></code> para ma-disable.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">2048</span></code></p>
+</dd>
+<dt><kbd><span class="option">--end-with <var>&lt;string&gt;</var></span>, <span class="option">-e <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Opsyon: <code class="docutils literal notranslate"><span class="pre">dataset</span></code> | <code class="docutils literal notranslate"><span class="pre">split</span></code> | <code class="docutils literal notranslate"><span class="pre">merge</span></code> | <code class="docutils literal notranslate"><span class="pre">opensfm</span></code> | <code class="docutils literal notranslate"><span class="pre">mve</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_filterpoints</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_meshing</span></code> | <code class="docutils literal notranslate"><span class="pre">mvs_texturing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_georeferencing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_dem</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_orthophoto</span></code></p>
+</dd>
+<dt><kbd><span class="option">--pc-ept</span></kbd></dt>
+<dd><p>Generates Entwine Point Cloud. Ang flag na ito ay automatikong nadadagdag kapag sinimulan ang WebODM at magagamit kapag bumubuo ng tamang directory structure kapag nagpapatakbo ng NodeODM o sa pagimport ng command line para maging WebODM.</p>
+</dd>
+<dt><kbd><span class="option">--rerun <var>&lt;string&gt;</var></span>, <span class="option">-r <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Opsyon: <code class="docutils literal notranslate"><span class="pre">dataset</span></code> | <code class="docutils literal notranslate"><span class="pre">split</span></code> | <code class="docutils literal notranslate"><span class="pre">merge</span></code> | <code class="docutils literal notranslate"><span class="pre">opensfm</span></code> | <code class="docutils literal notranslate"><span class="pre">mve</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_filterpoints</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_meshing</span></code> | <code class="docutils literal notranslate"><span class="pre">mvs_texturing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_georeferencing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_dem</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_orthophoto</span></code></p>
+</dd>
+<dt><kbd><span class="option">--rerun-all</span></kbd></dt>
+<dd><p>Pagulit sa lahat ng tasks.</p>
+</dd>
+<dt><kbd><span class="option">--rerun-from <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Opsyon: <code class="docutils literal notranslate"><span class="pre">dataset</span></code> | <code class="docutils literal notranslate"><span class="pre">split</span></code> | <code class="docutils literal notranslate"><span class="pre">merge</span></code> | <code class="docutils literal notranslate"><span class="pre">opensfm</span></code> | <code class="docutils literal notranslate"><span class="pre">mve</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_filterpoints</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_meshing</span></code> | <code class="docutils literal notranslate"><span class="pre">mvs_texturing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_georeferencing</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_dem</span></code> | <code class="docutils literal notranslate"><span class="pre">odm_orthophoto</span></code></p>
+</dd>
+<dt><kbd><span class="option">--proj <var>&lt;PROJ4 string&gt;</var></span></kbd></dt>
+<dd><p>Prodyeksyon na ginagamit sa pagtransform ng model sa mga heyograpikong coordinate.</p>
+</dd>
+<dt><kbd><span class="option">--min-num-features <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>Pinakamababang bilang ng pwede i-extract na imahe. Mas maraming tampok ay magreresulta ng mas magandang resulta ngutin mas mabagal na pagsasakatuparan.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">8000</span></code></p>
+</dd>
+<dt><kbd><span class="option">--feature-quality</span></kbd></dt>
+<dd><p>I-set ang feature extraction quality. Ang mas mataas na quality ay naggegenerate ng mas magandang features, ngunit ang mas kumakain ito ng mas malaking memorya at mas matagal ang proseso.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">ultra</span></code> | <code class="docutils literal notranslate"><span class="pre">high</span></code> | <code class="docutils literal notranslate"><span class="pre">medium</span></code> | <code class="docutils literal notranslate"><span class="pre">low</span></code> | <code class="docutils literal notranslate"><span class="pre">lowest</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">high</span></code></p>
+</dd>
+<dt><kbd><span class="option">--matcher-neighbors <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>Bilang ng pinakamalapit na imahe na i-prematch base sa GPS exif data. I-set sa <code class="docutils literal notranslate"><span class="pre">0</span></code> para malagpasan anf pre-matching. Ang Neighbors ay gumagana sa pamamagitan ng Distance parameter, i-set pareho sa 0 para hindi na gamitin ang pre-matching. Ang OpenSFM ay gumagamit ng parehong parameters ng sabay, Ang Bundler naman ay gumagamit lamang ng isa na may value, mas preferred nito ang Neighbors parameter.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+</dd>
+<dt><kbd><span class="option">--matcher-distance <var>&lt;integer&gt;</var></span></kbd></dt>
+<dd><p>Ang distance threshold sa meters para hanapin ang pre-matching na imahe base sa GPS exif data. I-set pareho sa <code class="docutils literal notranslate"><span class="pre">matcher-neighbors</span></code> at <code class="docutils literal notranslate"><span class="pre">0</span></code> ito para malagpasan ang pre-matching.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd>
+<dt><kbd><span class="option">--use-fixed-camera-params</span></kbd></dt>
+<dd><p>Patayin ang camera paremeter optimization habang ginagamit ang blunder. Off ang default maliban kung <code class="docutils literal notranslate"><span class="pre">--camera</span></code> parameter ang gamit.</p>
+</dd>
+<dt><kbd><span class="option">--camera-lens <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>i-set ang klase ng camera projection. Ang manual na pagaayos ng value ay makakatulong sa pagpapa-improve ng geometric undistortion. By default, ang aplikasyon ay sinusubukan na i-determine ang lens type galing sa image metadata.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">auto</span></code> | <code class="docutils literal notranslate"><span class="pre">perspective</span></code> | <code class="docutils literal notranslate"><span class="pre">brown</span></code> | <code class="docutils literal notranslate"><span class="pre">fisheye</span></code> | <code class="docutils literal notranslate"><span class="pre">spherical</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">auto</span></code></p>
+</dd>
+<dt><kbd><span class="option">--radiometric-calibration <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Magset ng radiometric calibration na gagamitin sa mga imahe. kapag nagpaprocess ng multispectral images, kailangan na i-set ang opsiyon para maobtain ang reflectance values (kung hindi ay makukuha lamang ang digital number (DN) values).</p>
+<p>[<code class="docutils literal notranslate"><span class="pre">camera</span></code>] ay nagaapply ng black level, vignetting, row gradient gain/exposure compensation (kung sapat na EXIF tags ang mayroon).</p>
+<p>Ang [<code class="docutils literal notranslate"><span class="pre">camera+sun</span></code>] ay experiemental, inaapply lahat ng correction ng [<code class="docutils literal notranslate"><span class="pre">camera</span></code>] at dinadagdagan ng spectral radiance na registered via a downdwelling light sensor (DLS) na pinagsasaalang-alang ang anggulo ng araw.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">none</span></code> | <code class="docutils literal notranslate"><span class="pre">camera</span></code> | <code class="docutils literal notranslate"><span class="pre">camera+sun</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">none</span></code></p>
+</dd>
+<dt><kbd><span class="option">--max-concurrency <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Ang pinakamalaking bilang ng proseso na gagamitin sa ibat-ibang proseso. Ang peak memory requirement ay ~1GB per thread at 2 megapixel na resolusyon ng imahe.</p>
+<p>Default: <em>number of cores</em></p>
+</dd>
+<dt><kbd><span class="option">--depthmap-resolution <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Maaaring macontrol ang density ng point cloud sa pamamagitan ng pag-set ng resolusyon ng depthmap images. Ang mas mataas na value ay mas matagal macompute at mas malaking memorya ang mapo-produce ng denser point clouds.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">640</span></code></p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-min-consistent-views <var>&lt;integer: 2 ≤ x ≤ 9&gt;</var></span></kbd></dt>
+<dd><p>Pinakakonti na bilang ng view na dapat magreconstruct sa point para ito ay maging valid. Gumamit ng mas mababang values kung ang imahe ay may mas konti na overlap. Ang mas mababang values ay nagreresulta ng mas dense na point clouds ngunit mas maraming noise. Ito ay nagaapply lamang kung ikaw ay gumagamit ng OpenSfM para sa dense matching.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-method <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Raw depthmap computation algorithm. <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH</span></code> at <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH_SAMPLE</span></code> ay mas mabilis, ngunit baka maka-miss ng valid points. Ang <code class="docutils literal notranslate"><span class="pre">BRUTE_FORCE</span></code> ay mas matagal ngunit nagreresulta ng desnser reconstructions.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH</span></code> | <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH_SAMPLE</span></code> | <code class="docutils literal notranslate"><span class="pre">BRUTE_FORCE</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH</span></code></p>
+</dd>
+<dt><kbd><span class="option">--opensfm-depthmap-min-patch-sd <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Kapag gumagamit ng <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH</span></code> o <code class="docutils literal notranslate"><span class="pre">PATCH_MATCH_SAMPLE</span></code>, ang nagcocontrol ng standard deviation threshold para maisama ang mga patches. Ang mga patches na may mas mababang standard deviation ay ini-ignore.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd>
+<dt><kbd><span class="option">--use-hybrid-bundle-adjustment</span></kbd></dt>
+<dd><p>Mag-run ng local bundle adjustment kada imahe na dinadagdag sa reconstruction at global adjustment kada 100 na imahe. Pinapabilis nito ang reconstruction ng mga malalaking datasets.</p>
+</dd>
+<dt><kbd><span class="option">--mve-confidence <var>&lt;float: 0 ≤ x ≤ 1&gt;</var></span></kbd></dt>
+<dd><p>I-discard ang mga points na may hindi siguradong threshold. Makakaapekto lamang ito sa dense reconstruction ng MVE. Ang higher values ay pinapagsawalang bahala ang mga points.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">0.6</span></code></p>
+</dd>
+<dt><kbd><span class="option">--use-3dmesh</span></kbd></dt>
+<dd><p>Gumamit ng full 3d mesh upang macompute ang orthophoto kesa sa 2.5D mesh. Ang opsyon na ito ay mas mabilis at nagbibigay ng resulta sa planar areas.</p>
+</dd>
+<dt><kbd><span class="option">--skip-3dmodel</span></kbd></dt>
+<dd><p>Lagpasan ang generation ng full 3d model. Makakatipid ka ng oras kung ang resulta na kailangan mo lang ay 2D tulad ng orthophotos at DEMs.</p>
+</dd>
+<dt><kbd><span class="option">--use-opensfm-dense</span></kbd></dt>
+<dd><p>Buksan ang opensfm para macompute ang dense point cloud alternatively.</p>
+</dd>
+<dt><kbd><span class="option">--ignore-gsd</span></kbd></dt>
+<dd><p>Wag pansinin ang Ground Sampling Distance (GSD). Ang GSD ay nagcacap ng pinakamaraming bilang ng imahe at nagreresize ng imahe kung kinakailangan na nagreresulta ng mas mabilis na pagproseso at mas kaunti na memory usage. Bilang ang GSD ay estimate lamang, ang hindi pagbigay pansin dito ay magreresulta ng medyo mas mabuting quality ng imahe.</p>
+</dd>
+<dt><kbd><span class="option">--mesh-size <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Ang pinakamaraming bilang ng vertex ng output mesh.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">100000</span></code></p>
+</dd>
+<dt><kbd><span class="option">--mesh-octree-depth <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Oct-tree depth used in the mesh reconstruction, increase to get more vertices, recommended values are 8-12.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+</dd>
+<dt><kbd><span class="option">--mesh-samples <var>&lt;float ≥ 1.0&gt;</var></span></kbd></dt>
+<dd><p>Bilang ng mga points kada octree node. Para sa mga low noise, ang value na nasa [1-5] ay magagamit. Para naman sa mas mataas na noise datasets, ang malaking value na nasa [15-20] naman ang magagamit.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
+</dd>
+<dt><kbd><span class="option">--mesh-point-weight <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Tinutukoy ng floating point value ang kahalagahan na ang pag-interpolate ng mga muwestra ng mga punto ay ibinigay sa pagbabalangkas ng na-screen na Poisson equation. Ang mga resulta ng orihinal (unscreened) Poisson Reconstruction ay maaaring makuha sa pamamagitan ng pagtatakda ng halagang ito sa &quot;0&quot;.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+</dd>
+<dt><kbd><span class="option">--fast-orthophoto</span></kbd></dt>
+<dd><p>** Eksperimental. ** Nilaktawan ang masinsin na pagyari at pagbuo ng modelong 3D. Bumubuo ito ng isang orthophoto nang direkta mula sa kalat-kalat na pagyari. Kung orthophoto lamang ang kailangan, at hindi isang buong 3D na modelo, i-on ang opsyong ito.</p>
+</dd>
+<dt><kbd><span class="option">--crop <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Awtomatikong i-crop ang mga imahe sa pamamagitan ng paglikha ng isang makinis na buffer sa paligid ng mga hangganan ng dataset, na lumiliit ng &quot;N&quot; na metro. Gamitin ang &quot;0&quot; para hindi paganahin ang pag-crop.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+</dd>
+<dt><kbd><span class="option">--pc-classify</span></kbd></dt>
+<dd><p>Uriin ang mga point cloud output gamit ang isang Simple Morphological Filter. Maaari mong kontrolin ang mga katangian ng opsyong ito sa pamamagitan ng pag-aayos ng mga parametrong <code class="docutils literal notranslate"><span class="pre">--dem-*</span></code>.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--pc-csv</span></kbd></dt>
+<dd><p>I-export ang georeferenced point cloud sa CSV format.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--pc-las</span></kbd></dt>
+<dd><p>I-export ang georeferenced point loud sa LAS format.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--pc-filter <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Sinasala ang cloud point sa pamamagitan ng pag-alis ng mga puntos na lumihis nang higit sa N standard deviation mula sa local mean. Itakda sa &quot;0&quot; upang hindi paganahin ang pag-filter.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">2.5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--smrf-scalar <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Simple Morphological Filter elevation scalar parameter.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">1.25</span></code></p>
+</dd>
+<dt><kbd><span class="option">--smrf-slope <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Simple Morphological Filter slope parameter (rise over run).</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">0.15</span></code></p>
+</dd>
+<dt><kbd><span class="option">--smrf-threshold <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Simple Morphological Filter elevation threshold parameter (meters).</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--smrf-window <var>&lt;positive float&gt;</var></span></kbd></dt>
+<dd><p>Simple Morphological Filter window radius parameter (meters).</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">18.0</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-data-term <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">area</span></code> | <code class="docutils literal notranslate"><span class="pre">gmi</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">gmi</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-nadir-weight <var>&lt;integer: 0 ≤ x ≤ 32&gt;</var></span></kbd></dt>
+<dd><p>Mga orthophoto lang ang naaapektohan. Ang mga mas mataas na halaga ay nagreresulta sa mas matalas na sulok, ngunit maaaring makaapekto sa pamamahagi ng kulay at pagkalabo. Gumamit ng mas mababang halaga para sa mga planar area at mas mataas na halaga para sa mga urban area. Ang default na halaga ay mabuti para sa karamihan ng mga sitwasyon.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-outlier-removal-type <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Klase ng photometric outlier removal method.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">none</span></code> | <code class="docutils literal notranslate"><span class="pre">gauss_damping</span></code> | <code class="docutils literal notranslate"><span class="pre">gauss_clamping</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">gauss_clamping</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-visibility-test</span></kbd></dt>
+<dd><p>Lagpasan ang geometric visibility test.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-global-seam-leveling</span></kbd></dt>
+<dd><p>Lagpasan ang global seam leveling. Magagamit ito sa IR data.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-local-seam-leveling</span></kbd></dt>
+<dd><p>Lagpasan ang local seam blending.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-skip-hole-filling</span></kbd></dt>
+<dd><p>Lagpasan ang pagpuno ng butas sa mga mesh.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-keep-unseen-faces</span></kbd></dt>
+<dd><p>Itago ang mga mukha sa mesh na hindi makikita sa camera.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--texturing-tone-mapping <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>I-turn on ang gamma tone mapping o wag para sa no tone mapping.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">gamma</span></code> | <code class="docutils literal notranslate"><span class="pre">none</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">none</span></code></p>
+</dd>
+<dt><kbd><span class="option">--gcp <var>&lt;path string&gt;</var></span></kbd></dt>
+<dd><p>Ang path na naglalaman ng ground control points gamit sa georeferencing. Ang file ay kailangan ng mga sumusunod na line format: <code class="docutils literal notranslate"><span class="pre">easting</span> <span class="pre">northing</span> <span class="pre">height</span> <span class="pre">pixelrow</span> <span class="pre">pixelcol</span> <span class="pre">imagename</span></code></p>
+<p>Default: None.</p>
+</dd>
+<dt><kbd><span class="option">--use-exif</span></kbd></dt>
+<dd><p>Gamitin ang tag na ito kung mayroong gcp_list.txt ngunit gustong gumamit ng exit geotags.</p>
+</dd>
+<dt><kbd><span class="option">--dtm</span></kbd></dt>
+<dd><p>Gamitin ang tag na ito para bumuo ng DTM (Digital Terrain Model, ground only) gamit ang simpleng morphological filter. I-check ang <code class="docutils literal notranslate"><span class="pre">--dem*</span></code> at <code class="docutils literal notranslate"><span class="pre">--smrf*</span></code> na parameters para sa mas-finer na tuning.</p>
+</dd>
+<dt><kbd><span class="option">--dsm</span></kbd></dt>
+<dd><p>Gamitin ang tag na ito para bumuo ng DSM (Digital Surface Model, ground + objects) gamit ang PROGRESIBONG morphological filter. I-check ang <code class="docutils literal notranslate"><span class="pre">--dem*</span></code> na parameters para sa mas-finer na tuning.</p>
+</dd>
+<dt><kbd><span class="option">--dem-gapfill-steps <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Bilang ng mga hakbang na ginamit upang punan ang mga lugar ng mga puwang. Itakda sa &quot;0&quot; upang hindi paganahin ang pagpuno ng puwang. Magsimula sa isang radius na katumbas ng resolusyon ng output, N ang bilang ng iba't ibang mga DEM na nabubuo, na may progresibong lumalaki na bilang ng radius gamit ang inverse distance weighted (IDW) na algorithm at pinagsama. Ang mga natitirang puwang ay pinagsasama gamit ang pinakamalapit na interpolation ng kapitbahay.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+</dd>
+<dt><kbd><span class="option">--dem-resolution <var>&lt;float&gt;</var></span></kbd></dt>
+<dd><p>Resolusyon ng DSM/DTM sa cm / pixel.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--dem-decimation <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Tanggalin ang mga puntos bago bumuo ng DEM. Ang &quot;1&quot; ay walang pagkabulok (buong kalidad). Ang &quot;100&quot; naman ay ~ 99% na pagkabulok ng mga puntos. Kapaki-pakinabang para sa pagpapabilis ng henerasyon.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd>
+<dt><kbd><span class="option">--dem-euclidean-map</span></kbd></dt>
+<dd><p>Ang map ay nagrereport ng distansiya sa pagitan ng mga cell sa pinakamalapit na NODATA value (bago magkaron ng hole filling). Ito ay magagamit sa pag-isolate ng mga areas na na-fill na.</p>
+<blockquote>
+<div><p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</div></blockquote>
+</dd>
+<dt><kbd><span class="option">--orthophoto-resolution <var>&lt;float: x ﹥0.0&gt;</var></span></kbd></dt>
+<dd><p>Resolusyon ng orthopoto sa cm/pixel.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-no-tiled</span></kbd></dt>
+<dd><p>I-set ang parameter na ito kung nais ng stripped geoTIFF.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-compression <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>I-set ang compression na gagamitin. Tandaan na maaari nitong ma-break ang gdal_translate kung hindi pamilyar sa iyong ginagawa.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">JPEG</span></code> | <code class="docutils literal notranslate"><span class="pre">LZW</span></code> | <code class="docutils literal notranslate"><span class="pre">PACKBITS</span></code> | <code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code> | <code class="docutils literal notranslate"><span class="pre">LZMA</span></code> | <code class="docutils literal notranslate"><span class="pre">NONE</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-bigtiff <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>I-control kung ang nagawa na orthophoto ay ang BigTIFF o ang classic TIFF. Ang BigTIFF ay para sa files na mas malaki sa 4GB and data. Tignan ang link para sa specs ng GDAL: <a class="reference external" href="https://www.gdal.org/frmt_gtiff.html">https://www.gdal.org/frmt_gtiff.html</a> for more info.</p>
+<p>Mga Opsiyon: <code class="docutils literal notranslate"><span class="pre">YES</span></code> | <code class="docutils literal notranslate"><span class="pre">NO</span></code> | <code class="docutils literal notranslate"><span class="pre">IF_NEEDED</span></code> | <code class="docutils literal notranslate"><span class="pre">IF_SAFER</span></code></p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">IF_SAFER</span></code></p>
+</dd>
+<dt><kbd><span class="option">--orthophoto-cutline</span></kbd></dt>
+<dd><p>Nag-generate ng poligon sa palligid ng cropping area na nag-cut ng orthophoto sa paligid ng features. ANg poligon na ito ay makakatulong sa pagtatahi ng mossaics na may multiple overlapping orthophotos.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--build-overviews</span></kbd></dt>
+<dd><p>Gumawa ng orthophoto overviews gamit ang gdaladdo.</p>
+</dd>
+<dt><kbd><span class="option">--verbose</span>, <span class="option">-v</span></kbd></dt>
+<dd><p>Magprint ng karagdagang mensahe sa console.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--time</span></kbd></dt>
+<dd><p>Mag-generate ng benchmark file sa runtime info.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>Dinidisplay ang bersiyon ng software number at exits.</p>
+</dd>
+<dt><kbd><span class="option">--split <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Ang average na bilang ng imahe kada submodel. kapag naghihiwalay ng malaking dataset sa mas maliit na submodels, ang mga imahe ay ginugrupo sa clusters. Ang value na ito ay nireregulate ang bilang ng imahe kung saan ang mga cluster ay dapat na may average.</p>
+</dd>
+<dt><kbd><span class="option">--split-overlap <var>&lt;positive integer&gt;</var></span></kbd></dt>
+<dd><p>Radius ng overlap sa pagitan ng submodels. Matapos pagsamasamahin ang mga imahe sa isang cluster, ang mga imahe na mas malapit sa cluster ay nadaragdag agad sa cluster. Ito ay nangyayari para siguraduhin na ang magkakalapit na submodel ay magoverlap.</p>
+</dd>
+<dt><kbd><span class="option">--optimize-disk-space</span></kbd></dt>
+<dd><p>Magdelete ng mabibigat na intermediate files (katulad ng original orthos, dtm, dsm) para magamit ng husto ang disk space habang naitatabi ang mga compressed na bersyon.  Nakakaapekto ito sa abilidad na magrestart ng  ng pipeline mula sa intermediate stage, nagaallow ito ng datasets na magprocess sa machines na walng sapat na space na available. Also, sa mode na ito, ang mga &quot;reports&quot; ay hindi naisusulat sa output 'opensfm' folder.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd><span class="option">--sm-cluster <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>URL to a ClusterODM instance for distributing a split-merge workflow on multiple nodes in parallel.</p>
+<p>Default: <em>None</em></p>
+</dd>
+<dt><kbd><span class="option">--merge <var>&lt;string&gt;</var></span></kbd></dt>
+<dd><p>Piliin ang mga imemerge sa merge step ng split dataset. By default, lahat ng output ay minemerge nito.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">all</span></code></p>
+</dd>
+</dl>
+<p><a class="reference external" href="https://github.com/opendronemap/docs#how-to-make-your-first-contribution">Learn to edit</a> and help improve <a class="reference external" href="https://github.com/OpenDroneMap/docs/blob/publish/source/arguments.rst">this page</a>!</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="outputs.html" class="btn btn-neutral float-right" title="OpenDroneMap Outputs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tutorials.html" class="btn btn-neutral float-left" title="Mga Tutoryal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, OpenDroneMap
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
